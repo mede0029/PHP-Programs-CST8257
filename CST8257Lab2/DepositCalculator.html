@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Deposit Calculator</title>
+        <link rel="stylesheet" type="text/css" href="DepositCalculator.css">
+        <meta charset="UTF-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <div style="line-height:1.8">  
+            
+        <h1 align="center" >Deposit Calculator</h1><br>    
+                
+        <form method="post" action="DepositCalculator.php">
+            <div class="form-group row">
+                <label for="principalAmount" class="col-lg-2 col-form-label"><b>Principal Amount: </b></label>
+                <div class="col-lg-10">
+                <input type="text" class="col-lg-2 form-control" id="principalAmount" name="principalAmount" >
+                </div> 
+            </div>        
+            <div class="form-group row">
+                <label for="interestRate" class="col-lg-2 col-form-label"><b>Interest Rate (%):</b> </label>
+                <div class="col-lg-10">
+                <input type="text" class="col-lg-2 form-control" id="interestRate" name="interestRate" >
+                </div>
+            </div>        
+            <div class="form-group row">
+                <label for="yearsToDeposit" class="col-lg-2 col-form-label"><b>Years to deposit:</b></label>
+                <div class="col-lg-3">
+                <select class="form-control" id="yearsToDeposit" name="yearsToDeposit">
+                    <option value="selectYears">Please select the number of years</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+                </div>
+            </div>
+            <br><hr><br>
+            <div class="form-group row">
+                <label for="name" class="col-lg-2 col-form-label"><b>Name:</b> </label>
+                <div class="col-lg-10">
+                <input type="text" class="col-lg-2 form-control" id="name" name="name" >
+                </div>
+            </div>       
+            <div class="form-group row">
+                <label for="postalCode" class="col-lg-2 col-form-label"><b>Postal Code: </b></label>
+                <div class="col-lg-10">
+                <input type="text" class="col-lg-2 form-control" id="postalCode" name="postalCode" >
+                </div>
+            </div>        
+            <div class="form-group row">
+                <label for="phoneNumber" class="col-lg-2 col-form-label"><b>Phone Number: <br></b>(nnn-nnn-nnnn): </label>
+                <div class="col-lg-10">
+                <input type="text" class="col-lg-2 form-control" id="phoneNumber" name="phoneNumber" >
+                </div>
+            </div>         
+            <div class="form-group row">
+                <label for="email" class="col-lg-2 col-form-label"><b>eMail Address: </b></label>
+                <div class="col-lg-10">
+                <input type="email" class="col-lg-2 form-control" id="email" name="email">
+                </div>
+            </div> 
+            <br><hr><br>               
+            <div class="form-group row">   
+                <p class="col-lg-2"> <b>Preferred contact method: </b></p>                
+                <label class="radio-inline col-lg-1 col-form-label">
+                <input type="radio" name="preferredContact" value="phone">Phone</label>
+                <label class="radio-inline col-lg-1 col-form-label">
+                <input type="radio" name="preferredContact" value="email">eMail</label>  
+            </div>             
+            <fieldset class="form-group row"> 
+                <legend class="col-lg-4 col-form-label"><b>If phone was selected, when can we contact you? </br>(check all applicable):</b> </legend>
+                <div class="col-lg-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contact[]" value="morning" >
+                        <label class="form-check-label" for="inlineCheckbox">Morning</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contact[]" value="afternoon" >
+                        <label class="form-check-label" for="inlineCheckbox">Afternoon</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="contact[]" value="evening" >
+                        <label class="form-check-label" for="inlineCheckbox">Evening</label>
+                    </div>
+                </div>
+            </fieldset><br>
+            <div class="form-group row">                
+                <button type="submit" class="btn btn-primary col-lg-1">Calculate</button>
+                    <div class="col-lg-10">
+                    <button type="reset" class="btn btn-primary col-lg-1">Clear</button>
+                    </div>
+            </div>             
+        </form>
+        </div>   
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    </body>
+</html>

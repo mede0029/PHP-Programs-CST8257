@@ -1,0 +1,26 @@
+body      { font-family: arial, sans-serif }
+div       { font-size: 10pt;
+			 text-align: center }
+table     { border: 1 }
+
+th		  { text-align: center;
+			 background-color: #ffffaa; 
+			 padding-top: 2px;
+			 padding-bottom: 2px;
+			 padding-left: 10px;
+			 padding-right: 10px }  
+ td       { padding-top: 2px;
+			 padding-bottom: 2px;
+			 padding-left: 10px;
+			 padding-right: 10px }
+
+br { clear: left; }
+
+.button 	{border: 1px solid #f00; border-style: groove; width: 7em}
+
+
+.error    	{ color: red; font: bold }
+.hidden	{ display: none}
+.distinct 	{ color: blue; font: bold } 
+.small {font-size: 8pt; color: #555555;}
+		 

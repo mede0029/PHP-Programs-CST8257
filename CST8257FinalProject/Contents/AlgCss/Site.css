@@ -1,0 +1,33 @@
+
+.btn-min-width {
+    min-width: 100px
+}
+.vertical-margin {
+    margin-bottom: 5px;
+    margin-top: 5px
+}
+.horizontal-margin {
+    margin-left: 5px;
+    margin-right: 5px
+}
+.content-center {
+    align-content: center
+}
+.no-padding {
+    padding: 0px
+}
+.no-margin {
+    margin: 0px
+}
+.error    { color: red }
+.distinct { color: blue } 
+
+body {
+    background-color: #B0C4DE ;
+}
+
+/*.container {
+    width:auto;
+    max-width:680px;
+    padding: 0 15px;
+}*/

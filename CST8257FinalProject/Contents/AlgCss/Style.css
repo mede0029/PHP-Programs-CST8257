@@ -1,0 +1,66 @@
+.btn-glyph{
+	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+.glyphicon {
+    font-size: 25px;
+    color: blue;
+}
+
+.gly-flip-horizontal {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.container{
+	z-index: 1; 
+}
+
+.side-comments{
+    margin-left: 10px;
+}
+
+.comments-list{
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.menu {
+	visibility: hidden;
+	z-index: 2;
+	position: absolute;
+	left: 40%;
+    top: 50%;
+}
+
+.thumbnails{
+    margin: auto;
+    padding-left: 8%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-container{
+    max-height: 800px;
+    max-width: 1024px;
+}
+
+.img-container:hover .menu{
+    visibility: visible;
+}
+
+.img-container:hover img{
+    opacity: 0.5;
+}

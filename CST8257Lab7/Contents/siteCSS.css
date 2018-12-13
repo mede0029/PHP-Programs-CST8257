@@ -1,0 +1,100 @@
+/*page loyout:*/
+.btn-min-width {
+    min-width: 100px
+}
+.vertical-margin {
+    margin-bottom: 5px;
+    margin-top: 5px
+}
+.horizontal-margin {
+    margin-left: 5px;
+    margin-right: 5px
+}
+.content-center {
+    align-content: center
+}
+.no-padding {
+    padding: 0px
+}
+.no-margin {
+    margin: 0px
+}
+.error    { color: red }
+.distinct { color: blue } 
+body {
+    background-color: #B0C4DE;
+    padding: 10px;
+    margin-left: 10px;
+    margin: 0;
+    font-family: Arial;
+}
+
+
+/*Thumbnails*/
+div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+}
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+* {
+    box-sizing: border-box;
+}
+/*The grid: Four equal columns that floats next to each other*/ 
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+/*Style the images inside the grid*/ 
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 5px;
+}
+.column img:hover {
+    opacity: 1;
+    padding: 5px;
+}
+/*Clear floats after the columns*/ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*The expanding image container*/ 
+.container {
+    position: relative;
+    display: none;
+}
+/*Expanding image text*/ 
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+/*Closable button inside the expanded image*/ 
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.wrapper {
+   position: relative;
+}
+
+
