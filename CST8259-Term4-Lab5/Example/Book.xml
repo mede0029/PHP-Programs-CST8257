@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book lang="en">
+   <bookinfo>
+      <title>Web Programming Languages II</title>
+      <author>
+         <firstname>John</firstname>
+         <surname>Smith</surname>
+      </author>
+      <copyright>
+         <year>2014</year>
+         <holder>John Smith</holder>
+      </copyright>
+   </bookinfo>
+   <preface>
+      <title>Web Programming Languages II</title>
+      <para>On processing XML documents in various environments and languages</para>
+   </preface>
+   <chapter id="navigation">
+      <title>Using SimpleXML to Access Elements</title>
+      <para num="1">Study how to access elements of XML as properties. SimpleXML is an extension that allows us to easily manipulate and get XML data.</para>
+      <para num="2">SimpleXML provides an easy way of getting an element's name, attributes and textual content if you know the XML document's structure or layout.</para>
+	  <para num="3">
+        When accessing an element using the name of the element as a property, the object is not
+		really a single node accessor. The object is really a collection of all child nodes with the name
+		supplied through the property. The collection is seamless, as you may have noticed, because
+		accessing the object directly actually means you are accessing the first element node in the
+		collection.
+      </para>
+   </chapter>
+</book>
